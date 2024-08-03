@@ -10,11 +10,11 @@ driver = webdriver.Chrome()
 
 try:
     # 1. 打开搜狐网站
-    driver.get("https://www.sohu.com")
+    driver.get("https://www.zhihu.com")
 
     # 2. 在输入框中搜索深度强化学习
     search_box = EC.presence_of_element_located((By.NAME, "query"))
-    search_box.send_keys("人工智能")
+    search_box.send_keys("多智能体强化学习")
     search_box.send_keys(Keys.RETURN)
 
     # 3. 打开搜索到的第一个结果
